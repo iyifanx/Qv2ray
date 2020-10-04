@@ -40,7 +40,7 @@ jobs:
       - name: Upload metadata to release
         uses: svenstaro/upload-release-action@v1-release
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.MYSECRET1 }}
           file: sha256.list
           asset_name: sha256.list
           tag: ${{ github.ref }}

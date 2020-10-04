@@ -109,7 +109,7 @@ jobs:
         uses: svenstaro/upload-release-action@v1-release
         if: github.event_name == 'release'
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.MYSECRET1 }}
           file: ${{ steps.get_package.outputs.NAME }}
           asset_name: ${{ steps.get_package.outputs.NAME }}
           tag: ${{ github.ref }}
